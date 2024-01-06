@@ -47,15 +47,6 @@ repos:
   hooks:
   - id: shellcheck
   - id: helmlint
-- repo: https://github.com/markdownlint/markdownlint
-  rev: v0.13.0
-  hooks:
-  - id: markdownlint
-    name: Markdownlint
-    description: Run markdownlint on your Markdown files
-    entry: mdl
-    language: ruby
-    files: \.(md|mdown|markdown)$
 - repo: https://github.com/thlorenz/doctoc
   rev: v2.2.0
   hooks:
