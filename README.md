@@ -1,5 +1,6 @@
 # Workshop Helm Blueprint
 
+
 ---
 
 ![](https://img.shields.io/github/commit-activity/m/ik-workshop/workshop-helm-blueprint)
@@ -21,6 +22,7 @@
 ## Contents
 
 - [Create](#create)
+- [Resource](#resource)
 - [Resources](#resources)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
@@ -30,6 +32,10 @@
 ## Create
 
 [**Create a repository using this template →**][template.generate]
+
+## Resource
+
+- [Helm unittest](https://github.com/helm-unittest/helm-unittest/tree/main)
 
 ## Resources
 
