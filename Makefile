@@ -28,10 +28,13 @@ uninstall: ## Uninstall hooks.
 validate: ## Validate files with pre-commit hooks.
 	@pre-commit run --all-files
 
+cleanup:## Cleanup outputs
+	@rm -rf output
+
 template: ## Template helm chart for local testing.
-	@helm template chart chart \
+	@helm template chart $(folder) \
 		--output-dir output -n default \
-		-f chart/values.yaml
+		-f $(folder)/values.yaml
 
 lint: ## Lint helm chart.
 	helm lint chart --values chart/values.yaml --debug
