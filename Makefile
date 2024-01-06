@@ -3,6 +3,13 @@
 # skopeo list-tags --no-creds docker://helmunittest/helm-unittest
 DOCKER_HELM_UNITITEST_IMAGE := helmunittest/helm-unittest:3.13.3-0.4.0
 
+SUPPORTED := chart issue-337
+
+check-issue: # export folder=chart
+ifeq ($(filter $(folder),$(SUPPORTED)),)
+	$(error $(folder) is not supported. Supported: $(SUPPORTED))
+endif
+
 help:
 	@grep -E '^[a-zA-Z0-9_-]+:.*?## .*$$' $(MAKEFILE_LIST) | awk 'BEGIN {FS = ":.*?## "}; {printf "\033[36m%-30s\033[0m %s\n", $$1, $$2}'
 
@@ -29,13 +36,13 @@ template: ## Template helm chart for local testing.
 lint: ## Lint helm chart.
 	helm lint chart --values chart/values.yaml --debug
 
-unit-test: ## Execute Unit tests via Container  -c "/bin/sh"
+unit-test-docker: check-issue ## Execute Unit tests via Container  -c "/bin/sh"
 	$(info Running unit tests...)
 	@docker run \
-		-v $(shell pwd)/chart:/apps/\
+		-v $(shell pwd)/$(folder):/apps/\
 		-it --rm  $(DOCKER_HELM_UNITITEST_IMAGE) -f tests/*.yaml .
 
-unit-test-local: ## Execute Unit tests locally
-	@helm unittest -f 'tests/unit/*.yaml' chart
+unit-test-local: check-issue ## Execute Unit tests locally
+	@helm unittest -f 'tests/*.yaml' $(folder)
 
 test: unit-test ## Run all available tests
