@@ -1,13 +1,13 @@
-# Workshop Blueprint
+# Workshop Helm Blueprint
 
 ---
 
-![](https://img.shields.io/github/commit-activity/m/ik-workshop/workshop-blueprint)
-![](https://img.shields.io/github/last-commit/ik-workshop/workshop-blueprint)
+![](https://img.shields.io/github/commit-activity/m/ik-workshop/workshop-helm-blueprint)
+![](https://img.shields.io/github/last-commit/ik-workshop/workshop-helm-blueprint)
 [![](https://img.shields.io/github/license/ivankatliarchuk/.github)](https://github.com/ivankatliarchuk/.github/LICENCE)
-[![](https://img.shields.io/github/languages/code-size/ik-workshop/workshop-blueprint)](https://github.com/ik-workshop/workshop-blueprint)
-[![](https://img.shields.io/github/repo-size/ik-workshop/workshop-blueprint)](https://github.com/ik-workshop/workshop-blueprint)
-![](https://img.shields.io/github/languages/top/ik-workshop/workshop-blueprint?color=green&logo=markdown&logoColor=blue)
+[![](https://img.shields.io/github/languages/code-size/ik-workshop/workshop-helm-blueprint)](https://github.com/ik-workshop/workshop-helm-blueprint)
+[![](https://img.shields.io/github/repo-size/ik-workshop/workshop-helm-blueprint)](https://github.com/ik-workshop/workshop-helm-blueprint)
+![](https://img.shields.io/github/languages/top/ik-workshop/workshop-helm-blueprint?color=green&logo=markdown&logoColor=blue)
 
 ---
 
@@ -34,11 +34,11 @@
 ## Resources
 
 <!-- resources -->
-[template.generate]: https://github.com/ik-workshop/workshop-blueprint/generate
+[template.generate]: https://github.com/ik-workshop/workshop-helm-blueprint/generate
 [code-style.badge]: https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square
 
-[governance-badge]: https://github.com/ik-workshop/workshop-blueprint/actions/workflows/governance.bot.yml/badge.svg
-[governance-action]: https://github.com/ik-workshop/workshop-blueprint/actions/workflows/governance.bot.yml
+[governance-badge]: https://github.com/ik-workshop/workshop-helm-blueprint/actions/workflows/governance.bot.yml/badge.svg
+[governance-action]: https://github.com/ik-workshop/workshop-helm-blueprint/actions/workflows/governance.bot.yml
 
-[governance.link-checker.badge]: https://github.com/ik-workshop/workshop-blueprint/actions/workflows/governance.links-checker.yml/badge.svg
-[governance.link-checker.status]: https://github.com/ik-workshop/workshop-blueprint/actions/workflows/governance.links-checker.yml
+[governance.link-checker.badge]: https://github.com/ik-workshop/workshop-helm-blueprint/actions/workflows/governance.links-checker.yml/badge.svg
+[governance.link-checker.status]: https://github.com/ik-workshop/workshop-helm-blueprint/actions/workflows/governance.links-checker.yml

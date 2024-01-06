@@ -1,6 +1,9 @@
+# Created by https://www.toptal.com/developers/gitignore/api/macos,homebrew,visualstudiocode,helm
+# Edit at https://www.toptal.com/developers/gitignore?templates=macos,homebrew,visualstudiocode,helm
 
-# Created by https://www.toptal.com/developers/gitignore/api/macos,visualstudiocode,homebrew
-# Edit at https://www.toptal.com/developers/gitignore?templates=macos,visualstudiocode,homebrew
+### Helm ###
+# Chart dependencies
+**/charts/*.tgz
 
 ### Homebrew ###
 Brewfile.lock.json
@@ -34,23 +37,27 @@ Network Trash Folder
 Temporary Items
 .apdisk
 
+### macOS Patch ###
+# iCloud generated files
+*.icloud
+
 ### VisualStudioCode ###
 .vscode/*
 !.vscode/settings.json
 !.vscode/tasks.json
 !.vscode/launch.json
 !.vscode/extensions.json
-*.code-workspace
+!.vscode/*.code-snippets
 
 # Local History for Visual Studio Code
 .history/
+
+# Built Visual Studio Code Extensions
+*.vsix
 
 ### VisualStudioCode Patch ###
 # Ignore all local history of files
 .history
 .ionide
 
-# Support for Project snippet scope
-!.vscode/*.code-snippets
-
-# End of https://www.toptal.com/developers/gitignore/api/macos,visualstudiocode,homebrew
+# End of https://www.toptal.com/developers/gitignore/api/macos,homebrew,visualstudiocode,helm
